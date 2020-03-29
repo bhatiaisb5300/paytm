@@ -25,7 +25,7 @@ SECRET_KEY = '7efgpebz(nw9mku3hxdh#9m1n&%r1&ja*mw^6p3ol0o40rxhnt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.43.228']
+ALLOWED_HOSTS = ['159.89.170.49','http://test-biotechconf.tk']
 
 
 # Application definition
