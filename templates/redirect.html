@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Redirecting...</h1>
+    {% if datas %}
+    <p>{{datas.items}}</p>
+    {% else %}
+    <h1>trht</h1>
+    {% endif %}
+    <form class="" action="https://securegw-stage.paytm.in/order/process" method="post" name='paytm'>
+        {% for key, value in datas.items %}
+        <input type="hidden" name="{{key}}" value="{{value}}">
+        {% endfor %}
+    </form>
+  </body>
+  <script>
+    document.paytm.submit()
+  </script>
+</html>
