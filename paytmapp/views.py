@@ -23,7 +23,7 @@ def index(request):
             'INDUSTRY_TYPE_ID':'Retail',
             'WEBSITE':'DEFAULT',
             'CHANNEL_ID':'WEB',
-            'CALLBACK_URL':'http://test-biotechconf.tk/status/',
+            'CALLBACK_URL':'http://test-site.tk:7000/status/',
         }
         data_dct['CHECKSUMHASH'] = generate_checksum(data_dct,MERCHANT_KEY)
         return render(request,'redirect.html',{'datas':data_dct})
